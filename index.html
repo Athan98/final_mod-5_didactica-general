@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,9 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
         .chart-container {
             position: relative;
             width: 100%;
@@ -24,19 +27,23 @@
             height: 350px;
             max-height: 400px;
         }
+
         @media (min-width: 768px) {
             .chart-container {
                 height: 400px;
             }
         }
+
         .modal {
             transition: opacity 0.25s ease;
         }
+
         .modal-content {
             transition: transform 0.25s ease;
         }
     </style>
 </head>
+
 <body class="bg-amber-50 text-slate-800 antialiased">
 
     <!-- Header y Navegación -->
@@ -48,28 +55,39 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#definiciones" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Definiciones</a>
-                        <a href="#aprendizaje" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Aprendizaje</a>
-                        <a href="#transformacion" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Transformación</a>
-                        <a href="#estrategias" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Estrategias</a>
-                        <a href="#sintesis" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Síntesis</a>
+                        <a href="#definiciones"
+                            class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Definiciones</a>
+                        <a href="#aprendizaje"
+                            class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Aprendizaje</a>
+                        <a href="#transformacion"
+                            class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Transformación</a>
+                        <a href="#estrategias"
+                            class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Estrategias</a>
+                        <a href="#sintesis"
+                            class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 px-3 py-2 rounded-md text-sm font-medium">Síntesis</a>
                     </div>
                 </div>
                 <div class="md:hidden">
                     <button id="menu-btn" class="text-gray-600 hover:text-teal-700 focus:outline-none">
                         <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
             <!-- Menú Móvil -->
             <div id="mobile-menu" class="md:hidden hidden pb-3 space-y-1">
-                <a href="#definiciones" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Definiciones</a>
-                <a href="#aprendizaje" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Aprendizaje</a>
-                <a href="#transformacion" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Transformación</a>
-                <a href="#estrategias" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Estrategias</a>
-                <a href="#sintesis" class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Síntesis</a>
+                <a href="#definiciones"
+                    class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Definiciones</a>
+                <a href="#aprendizaje"
+                    class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Aprendizaje</a>
+                <a href="#transformacion"
+                    class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Transformación</a>
+                <a href="#estrategias"
+                    class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Estrategias</a>
+                <a href="#sintesis"
+                    class="text-gray-600 hover:bg-amber-100 hover:text-teal-700 block px-3 py-2 rounded-md text-base font-medium">Síntesis</a>
             </div>
         </nav>
     </header>
@@ -80,22 +98,30 @@
         <section id="definiciones" class="mb-16 scroll-mt-20">
             <h2 class="text-3xl font-bold text-center text-teal-800 mb-8">Conceptos Fundamentales</h2>
             <p class="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-10">
-                Esta sección explora las definiciones centrales que construyen el campo de la Didáctica General. Entenderemos qué es la didáctica, la enseñanza y el aprendizaje según autores clave, sentando las bases de nuestra exploración.
+                Esta sección explora las definiciones centrales que construyen el campo de la Didáctica General.
+                Entenderemos qué es la didáctica, la enseñanza y el aprendizaje según autores clave, sentando las bases
+                de nuestra exploración.
             </p>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-teal-600">
                     <h3 class="text-xl font-bold text-teal-700 mb-3">La Didáctica</h3>
-                    <p class="text-slate-600 mb-4">"La didáctica es la disciplina que se encarga de estudiar la enseñanza. [...] es ponerse a pensar detenidamente qué problemas y qué alternativas se nos presentan a la hora de ayudar a otras personas (los alumnos) a aprender."</p>
+                    <p class="text-slate-600 mb-4">"La didáctica es la disciplina que se encarga de estudiar la
+                        enseñanza. [...] es ponerse a pensar detenidamente qué problemas y qué alternativas se nos
+                        presentan a la hora de ayudar a otras personas (los alumnos) a aprender."</p>
                     <p class="text-right font-medium text-sm text-slate-500">- Brailovsky (2016)</p>
                 </div>
                 <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-indigo-600">
                     <h3 class="text-xl font-bold text-indigo-700 mb-3">La Enseñanza</h3>
-                    <p class="text-slate-600 mb-4">"Enseñar es convocar y ayudar a aprender, es decir, ofrecer una invitación al conocimiento y acompañar a los estudiantes en su formación." Se concibe como una práctica intencionada, reflexiva y situada socialmente.</p>
+                    <p class="text-slate-600 mb-4">"Enseñar es convocar y ayudar a aprender, es decir, ofrecer una
+                        invitación al conocimiento y acompañar a los estudiantes en su formación." Se concibe como una
+                        práctica intencionada, reflexiva y situada socialmente.</p>
                     <p class="text-right font-medium text-sm text-slate-500">- Alliaud</p>
                 </div>
                 <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-amber-600">
                     <h3 class="text-xl font-bold text-amber-700 mb-3">El Aprendizaje</h3>
-                    <p class="text-slate-600 mb-4">"No consiste únicamente en adquirir información, sino en comprender, apropiarse y transferir saberes a diferentes contextos." El objetivo es que lo aprendido sirva "para la vida".</p>
+                    <p class="text-slate-600 mb-4">"No consiste únicamente en adquirir información, sino en comprender,
+                        apropiarse y transferir saberes a diferentes contextos." El objetivo es que lo aprendido sirva
+                        "para la vida".</p>
                     <p class="text-right font-medium text-sm text-slate-500">- Meirieu & Furman (2021)</p>
                 </div>
             </div>
@@ -105,7 +131,9 @@
         <section id="aprendizaje" class="mb-16 scroll-mt-20">
             <h2 class="text-3xl font-bold text-center text-teal-800 mb-8">El Foco: Aprendizaje Profundo</h2>
             <p class="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-10">
-                La didáctica no busca cualquier tipo de aprendizaje. El material distingue claramente entre una mera memorización (inerte) y un aprendizaje que permite la acción y la transferencia (profundo). Esta sección compara ambos enfoques.
+                La didáctica no busca cualquier tipo de aprendizaje. El material distingue claramente entre una mera
+                memorización (inerte) y un aprendizaje que permite la acción y la transferencia (profundo). Esta sección
+                compara ambos enfoques.
             </p>
             <div class="grid md:grid-cols-2 gap-8 items-stretch">
                 <div class="bg-white shadow-lg rounded-lg p-6 border-l-4 border-red-500">
@@ -135,7 +163,9 @@
         <section id="transformacion" class="mb-16 scroll-mt-20">
             <h2 class="text-3xl font-bold text-center text-teal-800 mb-8">La Transformación Necesaria</h2>
             <p class="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-10">
-                Para lograr un aprendizaje profundo, el modelo escolar debe evolucionar. El texto propone un cambio claro desde un modelo tradicional y homogéneo hacia uno que abrace la diversidad como una oportunidad pedagógica.
+                Para lograr un aprendizaje profundo, el modelo escolar debe evolucionar. El texto propone un cambio
+                claro desde un modelo tradicional y homogéneo hacia uno que abrace la diversidad como una oportunidad
+                pedagógica.
             </p>
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="bg-white shadow-lg rounded-lg p-6">
@@ -148,9 +178,14 @@
                         <li>Produce conocimientos inertes.</li>
                     </ul>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 md:border-t-0 md:border-l-4 border-teal-600 relative">
-                    <span class="absolute -top-4 md:-left-5 left-1/2 -translate-x-1/2 md:translate-x-0 md:top-1/2 md:-translate-y-1/2 bg-teal-600 text-white rounded-full p-2 w-10 h-10 flex items-center justify-center shadow-lg">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                <div
+                    class="bg-white shadow-lg rounded-lg p-6 border-t-4 md:border-t-0 md:border-l-4 border-teal-600 relative">
+                    <span
+                        class="absolute -top-4 md:-left-5 left-1/2 -translate-x-1/2 md:translate-x-0 md:top-1/2 md:-translate-y-1/2 bg-teal-600 text-white rounded-full p-2 w-10 h-10 flex items-center justify-center shadow-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
                     </span>
                     <h3 class="text-2xl font-bold text-teal-700 mb-4">Escuela Heterogénea (Inclusiva)</h3>
                     <ul class="list-disc list-inside space-y-2 text-slate-600">
@@ -168,50 +203,67 @@
         <section id="estrategias" class="mb-16 scroll-mt-20">
             <h2 class="text-3xl font-bold text-center text-teal-800 mb-8">Innovación y Estrategias</h2>
             <p class="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-10">
-                La didáctica impulsa la innovación para mantener la calidad y pertinencia de la escuela. Innovar es "alterar los elementos de un orden escolar que apagan o limitan el deseo de aprender" (Rivas, 2017). A continuación, exploramos dos estrategias clave para el aula heterogénea: las Inteligencias Múltiples y la planificación flexible como el TA-TE-TI.
+                La didáctica impulsa la innovación para mantener la calidad y pertinencia de la escuela. Innovar es
+                "alterar los elementos de un orden escolar que apagan o limitan el deseo de aprender" (Rivas, 2017). A
+                continuación, exploramos dos estrategias clave para el aula heterogénea: las Inteligencias Múltiples y
+                la planificación flexible como el TA-TE-TI.
             </p>
 
             <!-- Inteligencias Múltiples -->
             <div class="bg-white shadow-lg rounded-lg p-6 md:p-8 mb-12">
-                <h3 class="text-2xl font-bold text-indigo-700 mb-6 text-center">Explorador de Inteligencias Múltiples (Gardner)</h3>
-                <p class="text-center text-slate-600 mb-8">Howard Gardner (2013) afirma que "enseñar al individuo y enseñar de formas diferentes son las principales implicaciones educacionales de la teoría." Haga clic en cada inteligencia para ver su descripción y cómo aplicarla.</p>
+                <h3 class="text-2xl font-bold text-indigo-700 mb-6 text-center">Explorador de Inteligencias Múltiples
+                    (Gardner)</h3>
+                <p class="text-center text-slate-600 mb-8">Howard Gardner (2013) afirma que "enseñar al individuo y
+                    enseñar de formas diferentes son las principales implicaciones educacionales de la teoría." Haga
+                    clic en cada inteligencia para ver su descripción y cómo aplicarla.</p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-                    <button data-target="modal-ling" class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
+                    <button data-target="modal-ling"
+                        class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
                         <span class="text-3xl block mb-2">🗣️</span>
                         <span class="font-semibold">Lingüística</span>
                     </button>
-                    <button data-target="modal-log" class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
+                    <button data-target="modal-log"
+                        class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
                         <span class="text-3xl block mb-2">🧮</span>
                         <span class="font-semibold">Lógico-Matemática</span>
                     </button>
-                    <button data-target="modal-esp" class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
+                    <button data-target="modal-esp"
+                        class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
                         <span class="text-3xl block mb-2">🎨</span>
                         <span class="font-semibold">Espacial</span>
                     </button>
-                    <button data-target="modal-kin" class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
+                    <button data-target="modal-kin"
+                        class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
                         <span class="text-3xl block mb-2">🤸</span>
                         <span class="font-semibold">Físico-Kinestésica</span>
                     </button>
-                    <button data-target="modal-mus" class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
+                    <button data-target="modal-mus"
+                        class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
                         <span class="text-3xl block mb-2">🎵</span>
                         <span class="font-semibold">Musical</span>
                     </button>
-                    <button data-target="modal-nat" class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
+                    <button data-target="modal-nat"
+                        class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
                         <span class="text-3xl block mb-2">🌿</span>
                         <span class="font-semibold">Naturalista</span>
                     </button>
-                    <button data-target="modal-intra" class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
+                    <button data-target="modal-intra"
+                        class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
                         <span class="text-3xl block mb-2">🧘</span>
                         <span class="font-semibold">Intrapersonal</span>
                     </button>
-                    <button data-target="modal-inter" class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
+                    <button data-target="modal-inter"
+                        class="mi-button bg-indigo-100 text-indigo-800 p-4 rounded-lg shadow-sm hover:bg-indigo-200 hover:shadow-md transition-all text-center">
                         <span class="text-3xl block mb-2">🤝</span>
                         <span class="font-semibold">Interpersonal</span>
                     </button>
                 </div>
 
                 <h4 class="text-xl font-bold text-indigo-700 mb-4 text-center">Perfil de Inteligencias (Ejemplo)</h4>
-                <p class="text-center text-slate-600 mb-6 max-w-2xl mx-auto">Gardner sostiene que cada persona tiene una *combinación singular* de estas inteligencias. Un gráfico de radar puede ayudar a visualizar un perfil hipotético, mostrando cómo la didáctica debe ofrecer múltiples caminos para una misma meta.</p>
+                <p class="text-center text-slate-600 mb-6 max-w-2xl mx-auto">Gardner sostiene que cada persona tiene una
+                    <b>combinación singular</b> de estas inteligencias. Un gráfico de radar puede ayudar a visualizar un
+                    perfil hipotético, mostrando cómo la didáctica debe ofrecer múltiples caminos para una misma meta.
+                </p>
                 <div class="chart-container">
                     <canvas id="miChart"></canvas>
                 </div>
@@ -219,53 +271,87 @@
 
             <!-- Estrategia TA-TE-TI ACTUALIZADA -->
             <div class="bg-white shadow-lg rounded-lg p-6 md:p-8">
-                <h3 class="text-2xl font-bold text-teal-700 mb-6 text-center">Estrategia Práctica: Planificación TA-TE-TI Flexible</h3>
-                <p class="text-center text-slate-600 mb-8 max-w-3xl mx-auto">Esta grilla permite a los estudiantes elegir una línea de 3 actividades (horizontal, vertical o diagonal) para completar la unidad, **PERO** el casillero 5 es de cumplimiento obligatorio, ya que es el eje lógico-matemático de la unidad ("Presupuesto Ideal").
-                <br><br>Haga clic en una casilla para ver la consigna de la actividad y la inteligencia asociada.</p>
-                
+                <h3 class="text-2xl font-bold text-teal-700 mb-6 text-center">Estrategia Práctica: Planificación
+                    TA-TE-TI</h3>
+                <p class="text-center text-slate-600 mb-8 max-w-3xl mx-auto">
+                    <b>Nivel:</b> Secundario (4° o 5° año) <br>
+                    <b>Área:</b> Formación Ética y Ciudadana / Economía / Matemática Aplicada. <br>
+                    <b>Tema: </b>Finanzas domésticas de los estudiantes: administración del dinero personal y familiar
+                </p>
+
+                <div class="text-center text-slate-600 mb-8 max-w-3xl mx-auto">
+                    <b>Se espera que el alumno:</b>
+                    <ul class="list-disc list-inside text-left mt-4 space-y-2">
+                        <li>Reconocer los principales ingresos y egresos en la economía doméstica.</li>
+                        <li>Aplicar conceptos básicos de presupuesto y ahorro.</li>
+                        <li>Reflexionar sobre hábitos financieros saludables.</li>
+                        <li>Diseñar estrategias personales para administrar sus recursos de forma responsable.</li>
+                    </ul>
+                </div>
+
+
+                <p class="text-center text-slate-600 mb-8 max-w-3xl mx-auto">Esta grilla permite a los estudiantes
+                    elegir una línea de 3 actividades (horizontal, vertical o diagonal) para completar la unidad,
+                    <b>PERO</b> el casillero 5 es de cumplimiento obligatorio, ya que es el eje lógico-matemático de la
+                    unidad ("Presupuesto Ideal").
+                    <br><br>Haga clic en una casilla para ver la consigna de la actividad y la inteligencia asociada.
+                </p>
+
                 <div class="grid grid-cols-3 gap-2 max-w-md mx-auto aspect-square">
                     <!-- Fila 1 -->
-                    <button data-target="modal-t1" class="tateti-button bg-amber-200 text-amber-900 rounded-lg shadow-md hover:bg-amber-300 transition-all flex flex-col items-center justify-center p-3 text-center">
+                    <button data-target="modal-t1"
+                        class="tateti-button bg-amber-200 text-amber-900 rounded-lg shadow-md hover:bg-amber-300 transition-all flex flex-col items-center justify-center p-3 text-center">
                         <span class="text-xl font-bold block mb-1">1</span>
                         <span class="text-sm font-semibold">Lingüística</span>
                     </button>
-                    <button data-target="modal-t2" class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
+                    <button data-target="modal-t2"
+                        class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
                         <span class="text-xl font-bold block mb-1">2</span>
                         <span class="text-sm font-semibold">Lógico-Mat.</span>
                     </button>
-                    <button data-target="modal-t3" class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
+                    <button data-target="modal-t3"
+                        class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
                         <span class="text-xl font-bold block mb-1">3</span>
                         <span class="text-sm font-semibold">Musical</span>
                     </button>
                     <!-- Fila 2 -->
-                    <button data-target="modal-t4" class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
+                    <button data-target="modal-t4"
+                        class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
                         <span class="text-xl font-bold block mb-1">4</span>
                         <span class="text-sm font-semibold">Interpersonal</span>
                     </button>
-                    <button data-target="modal-t5" class="tateti-button bg-amber-200 text-amber-900 rounded-lg shadow-md hover:bg-amber-300 transition-all flex flex-col items-center justify-center p-3 text-center border-2 border-teal-600">
+                    <button data-target="modal-t5"
+                        class="tateti-button bg-amber-200 text-amber-900 rounded-lg shadow-md hover:bg-amber-300 transition-all flex flex-col items-center justify-center p-3 text-center border-2 border-teal-600">
                         <span class="text-xl font-bold block mb-1">5 (Central)</span>
                         <span class="text-sm font-semibold">Lógico-Mat.</span>
                     </button>
-                    <button data-target="modal-t6" class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
+                    <button data-target="modal-t6"
+                        class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
                         <span class="text-xl font-bold block mb-1">6</span>
                         <span class="text-sm font-semibold">Espacial</span>
                     </button>
                     <!-- Fila 3 -->
-                    <button data-target="modal-t7" class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
+                    <button data-target="modal-t7"
+                        class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
                         <span class="text-xl font-bold block mb-1">7</span>
                         <span class="text-sm font-semibold">Intrapersonal</span>
                     </button>
-                    <button data-target="modal-t8" class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
+                    <button data-target="modal-t8"
+                        class="tateti-button bg-amber-100 text-amber-800 rounded-lg shadow-md hover:bg-amber-200 transition-all flex flex-col items-center justify-center p-3 text-center">
                         <span class="text-xl font-bold block mb-1">8</span>
                         <span class="text-sm font-semibold">Naturalista</span>
                     </button>
-                    <button data-target="modal-t9" class="tateti-button bg-amber-200 text-amber-900 rounded-lg shadow-md hover:bg-amber-300 transition-all flex flex-col items-center justify-center p-3 text-center">
+                    <button data-target="modal-t9"
+                        class="tateti-button bg-amber-200 text-amber-900 rounded-lg shadow-md hover:bg-amber-300 transition-all flex flex-col items-center justify-center p-3 text-center">
                         <span class="text-xl font-bold block mb-1">9</span>
                         <span class="text-sm font-semibold">Físico-K.</span>
                     </button>
                 </div>
-                <p class="text-sm text-center text-red-600 font-bold mt-4 p-2 bg-red-100 rounded-lg border border-red-300">
-                    ⚠️ **REGLA MANDATORIA:** El recorrido elegido (línea de 3) **SIEMPRE** debe incluir el casillero 5 (Presupuesto Ideal).
+                <p
+                    class="text-sm text-center text-red-600 font-bold mt-4 p-2 bg-red-100 rounded-lg border border-red-300">
+                    ⚠️ <b>REGLA MANDATORIA:</b> El recorrido elegido (línea de 3) <b>SIEMPRE</b> debe incluir el
+                    casillero 5
+                    (Presupuesto Ideal).
                 </p>
             </div>
         </section>
@@ -275,11 +361,15 @@
             <h2 class="text-3xl font-bold text-center text-teal-800 mb-8">Síntesis Integradora</h2>
             <div class="bg-white shadow-lg rounded-lg p-8 max-w-4xl mx-auto border-t-4 border-teal-600">
                 <p class="text-lg text-slate-700 leading-relaxed">
-                    La Didáctica General funciona como un eje integrador que conecta los distintos conceptos abordados e impulsa una práctica docente reflexiva, ética y creativa, orientada a la formación de sujetos autónomos, críticos y comprometidos con su entorno.
+                    La Didáctica General funciona como un eje integrador que conecta los distintos conceptos abordados e
+                    impulsa una práctica docente reflexiva, ética y creativa, orientada a la formación de sujetos
+                    autónomos, críticos y comprometidos con su entorno.
                 </p>
                 <br>
                 <p class="text-lg text-slate-700 leading-relaxed">
-                    En un contexto educativo en constante cambio, la Didáctica se consolida como la herramienta teórica y práctica que permite **enseñar con sentido**, **aprender con profundidad** e **innovar con inclusión**.
+                    En un contexto educativo en constante cambio, la Didáctica se consolida como la herramienta teórica
+                    y práctica que permite **enseñar con sentido**, **aprender con profundidad** e **innovar con
+                    inclusión**.
                 </p>
             </div>
         </section>
@@ -293,194 +383,295 @@
     </footer>
 
     <!-- MODALES DE INTELIGENCIAS MÚLTIPLES (SIN CAMBIOS EN LA DESCRIPCIÓN DE LA INTELIGENCIA) -->
-    <div id="modal-ling" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-ling"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-2xl font-bold text-indigo-700 mb-4">🗣️ Inteligencia Lingüística</h4>
-            <p class="text-slate-600"><strong>Descripción:</strong> Habilidad para usar el lenguaje (oral y escrito) de manera efectiva para expresar ideas, persuadir y comprender a otros. Sensibilidad a los sonidos, significados y ritmos de las palabras.</p>
-            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Debates, escritura creativa, narración de historias (storytelling), exposiciones orales, creación de guiones, entrevistas.</p>
+            <p class="text-slate-600"><strong>Descripción:</strong> Habilidad para usar el lenguaje (oral y escrito) de
+                manera efectiva para expresar ideas, persuadir y comprender a otros. Sensibilidad a los sonidos,
+                significados y ritmos de las palabras.</p>
+            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Debates, escritura creativa, narración
+                de historias (storytelling), exposiciones orales, creación de guiones, entrevistas.</p>
         </div>
     </div>
-    <div id="modal-log" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-log"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-2xl font-bold text-indigo-700 mb-4">🧮 Inteligencia Lógico-Matemática</h4>
-            <p class="text-slate-600"><strong>Descripción:</strong> Capacidad para usar números eficazmente, razonar lógicamente, y analizar problemas. Identificación de patrones, relaciones de causa-efecto y pensamiento abstracto.</p>
-            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Resolución de problemas, acertijos lógicos, experimentos, clasificación y categorización, análisis de datos, creación de presupuestos.</p>
+            <p class="text-slate-600"><strong>Descripción:</strong> Capacidad para usar números eficazmente, razonar
+                lógicamente, y analizar problemas. Identificación de patrones, relaciones de causa-efecto y pensamiento
+                abstracto.</p>
+            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Resolución de problemas, acertijos
+                lógicos, experimentos, clasificación y categorización, análisis de datos, creación de presupuestos.</p>
         </div>
     </div>
-    <div id="modal-esp" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-esp"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-2xl font-bold text-indigo-700 mb-4">🎨 Inteligencia Espacial</h4>
-            <p class="text-slate-600"><strong>Descripción:</strong> Habilidad para percibir el mundo viso-espacial con precisión y realizar transformaciones sobre esas percepciones. Creación de representaciones visuales.</p>
-            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Mapas conceptuales, infografías, maquetas, dibujo, diseño gráfico, diagramas de flujo, navegación por mapas.</p>
+            <p class="text-slate-600"><strong>Descripción:</strong> Habilidad para percibir el mundo viso-espacial con
+                precisión y realizar transformaciones sobre esas percepciones. Creación de representaciones visuales.
+            </p>
+            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Mapas conceptuales, infografías,
+                maquetas, dibujo, diseño gráfico, diagramas de flujo, navegación por mapas.</p>
         </div>
     </div>
-    <div id="modal-kin" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-kin"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-2xl font-bold text-indigo-700 mb-4">🤸 Inteligencia Físico-Kinestésica</h4>
-            <p class="text-slate-600"><strong>Descripción:</strong> Habilidad para usar el cuerpo para expresar ideas y sentimientos, y facilidad en el uso de las manos para transformar elementos. Coordinación, equilibrio, destreza.</p>
-            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Dramatizaciones, role-playing, construcción de modelos, experimentos de laboratorio, actividades deportivas, "aprender haciendo".</p>
+            <p class="text-slate-600"><strong>Descripción:</strong> Habilidad para usar el cuerpo para expresar ideas y
+                sentimientos, y facilidad en el uso de las manos para transformar elementos. Coordinación, equilibrio,
+                destreza.</p>
+            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Dramatizaciones, role-playing,
+                construcción de modelos, experimentos de laboratorio, actividades deportivas, "aprender haciendo".</p>
         </div>
     </div>
-    <div id="modal-mus" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-mus"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-2xl font-bold text-indigo-700 mb-4">🎵 Inteligencia Musical</h4>
-            <p class="text-slate-600"><strong>Descripción:</strong> Capacidad para percibir, discriminar, transformar y expresar las formas musicales. Sensibilidad al ritmo, tono y timbre.</p>
-            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Componer jingles o raps sobre un tema, analizar letras de canciones, usar música de fondo para crear ambiente, crear reglas mnemotécnicas con ritmo.</p>
+            <p class="text-slate-600"><strong>Descripción:</strong> Capacidad para percibir, discriminar, transformar y
+                expresar las formas musicales. Sensibilidad al ritmo, tono y timbre.</p>
+            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Componer jingles o raps sobre un tema,
+                analizar letras de canciones, usar música de fondo para crear ambiente, crear reglas mnemotécnicas con
+                ritmo.</p>
         </div>
     </div>
-    <div id="modal-nat" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-nat"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-2xl font-bold text-indigo-700 mb-4">🌿 Inteligencia Naturalista</h4>
-            <p class="text-slate-600"><strong>Descripción:</strong> Habilidad para reconocer, clasificar y utilizar elementos del medio ambiente (flora y fauna). Sensibilidad hacia el mundo natural.</p>
-            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Proyectos de ecología (ej. economía circular), trabajo de campo, observación y clasificación, cuidado de plantas/animales.</p>
+            <p class="text-slate-600"><strong>Descripción:</strong> Habilidad para reconocer, clasificar y utilizar
+                elementos del medio ambiente (flora y fauna). Sensibilidad hacia el mundo natural.</p>
+            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Proyectos de ecología (ej. economía
+                circular), trabajo de campo, observación y clasificación, cuidado de plantas/animales.</p>
         </div>
     </div>
-    <div id="modal-intra" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-intra"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-2xl font-bold text-indigo-700 mb-4">🧘 Inteligencia Intrapersonal</h4>
-            <p class="text-slate-600"><strong>Descripción:</strong> Autoconocimiento profundo. Habilidad para comprender los propios sentimientos, motivaciones y metas. Autodisciplina y autoestima.</p>
-            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Diarios de reflexión, actividades de metacognición (pensar sobre cómo se aprende), establecimiento de metas personales, autoevaluación.</p>
+            <p class="text-slate-600"><strong>Descripción:</strong> Autoconocimiento profundo. Habilidad para comprender
+                los propios sentimientos, motivaciones y metas. Autodisciplina y autoestima.</p>
+            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Diarios de reflexión, actividades de
+                metacognición (pensar sobre cómo se aprende), establecimiento de metas personales, autoevaluación.</p>
         </div>
     </div>
-    <div id="modal-inter" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-inter"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-2xl font-bold text-indigo-700 mb-4">🤝 Inteligencia Interpersonal</h4>
-            <p class="text-slate-600"><strong>Descripción:</strong> Capacidad de entender y relacionarse con otras personas. Habilidad para percibir estados de ánimo, motivaciones e intenciones de los demás. Empatía y liderazgo.</p>
-            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Trabajo colaborativo, proyectos en equipo, tutorías entre pares, debates, mediación de conflictos, entrevistas.</p>
+            <p class="text-slate-600"><strong>Descripción:</strong> Capacidad de entender y relacionarse con otras
+                personas. Habilidad para percibir estados de ánimo, motivaciones e intenciones de los demás. Empatía y
+                liderazgo.</p>
+            <p class="text-slate-600 mt-3"><strong>Aplicación Didáctica:</strong> Trabajo colaborativo, proyectos en
+                equipo, tutorías entre pares, debates, mediación de conflictos, entrevistas.</p>
         </div>
     </div>
-    
+
     <!-- MODALES DEL TA-TE-TI ACTUALIZADO Y DETALLADO -->
 
     <!-- T1: Lingüística (Relato Financiero) -->
-    <div id="modal-t1" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t1"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-xl font-bold text-amber-800 mb-4">1. Mi Relato Financiero (Lingüística)</h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Crear un cuento o relato corto sobre un/a joven (protagonista) que debe tomar una decisión financiera importante. El relato debe reflejar la importancia de la planificación o el ahorro.</li>
-                <li><strong>Tarea:</strong> Escribir una historia de 400-600 palabras. Incluir diálogo, descripción de un dilema financiero (ej. un gasto grande inesperado) y una moraleja explícita sobre un concepto financiero.</li>
-                <li><strong>Ejemplo:</strong> La historia de "Mariano y la bicicleta" donde debe decidir si gasta todo el dinero que ahorró en videojuegos o si lo guarda para una bicicleta que le permitirá trabajar en verano.</li>
+                <li><strong>Consigna:</strong> Crear un cuento o relato corto sobre un/a joven (protagonista) que debe
+                    tomar una decisión financiera importante. El relato debe reflejar la importancia de la planificación
+                    o el ahorro.</li>
+                <li><strong>Tarea:</strong> Escribir una historia de 400-600 palabras. Incluir diálogo, descripción de
+                    un dilema financiero (ej. un gasto grande inesperado) y una moraleja explícita sobre un concepto
+                    financiero.</li>
+                <li><strong>Ejemplo:</strong> La historia de "Mariano y la bicicleta" donde debe decidir si gasta todo
+                    el dinero que ahorró en videojuegos o si lo guarda para una bicicleta que le permitirá trabajar en
+                    verano.</li>
                 <li><strong>Formato:</strong> Cuento o relato individual.</li>
             </ul>
         </div>
     </div>
 
     <!-- T2: Lógico-Matemática (Mi Semana en Números) -->
-    <div id="modal-t2" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t2"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-xl font-bold text-amber-800 mb-4">2. Mi Semana en Números (Lógico-Matemática)</h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Registrar y clasificar los ingresos y gastos de una semana simulada o real para diagnosticar el estado financiero.</li>
-                <li><strong>Tarea:</strong> 1. Crear una tabla de doble entrada. 2. Listar al menos 5 ingresos y 10 gastos. 3. Clasificar cada gasto como **Fijo** (ej. alquiler), **Variable** (ej. comida) o **Prescindible** (ej. streaming/ocio). 4. Calcular el porcentaje de cada categoría de gasto.</li>
-                <li><strong>Ejemplo:</strong> Si el ingreso semanal es $50.000 y el gasto prescindible es $10.000, debe calcular que el 20% del ingreso se va en gastos prescindibles.</li>
+                <li><strong>Consigna:</strong> Registrar y clasificar los ingresos y gastos de una semana simulada o
+                    real para diagnosticar el estado financiero.</li>
+                <li><strong>Tarea:</strong> 1. Crear una tabla de doble entrada. 2. Listar al menos 5 ingresos y 10
+                    gastos. 3. Clasificar cada gasto como **Fijo** (ej. alquiler), **Variable** (ej. comida) o
+                    **Prescindible** (ej. streaming/ocio). 4. Calcular el porcentaje de cada categoría de gasto.</li>
+                <li><strong>Ejemplo:</strong> Si el ingreso semanal es $50.000 y el gasto prescindible es $10.000, debe
+                    calcular que el 20% del ingreso se va en gastos prescindibles.</li>
                 <li><strong>Formato:</strong> Tabla individual con cálculos y conclusión.</li>
             </ul>
         </div>
     </div>
-    
+
     <!-- T3: Musical (El Jingle del Ahorro) -->
-    <div id="modal-t3" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t3"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-xl font-bold text-amber-800 mb-4">3. El Jingle del Ahorro (Musical)</h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Componer un "jingle" publicitario, una copla o un rap breve para memorizar un concepto financiero clave (ej. la diferencia entre activo y pasivo).</li>
-                <li><strong>Tarea:</strong> La letra debe tener al menos 8 versos y explicar de manera sencilla y rítmica el concepto. Presentar la letra escrita y ensayar la interpretación ante el grupo.</li>
-                <li><strong>Ejemplo:</strong> Un rap que diga: "Si entra dinero, eso es activo / Si sale plata, ese es pasivo / Controla bien cada movimiento / ¡Presupuesto es el cimiento!".</li>
+                <li><strong>Consigna:</strong> Componer un "jingle" publicitario, una copla o un rap breve para
+                    memorizar un concepto financiero clave (ej. la diferencia entre activo y pasivo).</li>
+                <li><strong>Tarea:</strong> La letra debe tener al menos 8 versos y explicar de manera sencilla y
+                    rítmica el concepto. Presentar la letra escrita y ensayar la interpretación ante el grupo.</li>
+                <li><strong>Ejemplo:</strong> Un rap que diga: "Si entra dinero, eso es activo / Si sale plata, ese es
+                    pasivo / Controla bien cada movimiento / ¡Presupuesto es el cimiento!".</li>
                 <li><strong>Formato:</strong> Letra escrita + Presentación oral/cantada.</li>
             </ul>
         </div>
     </div>
-    
+
     <!-- T4: Interpersonal (Debate de Consumo) -->
-    <div id="modal-t4" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t4"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-xl font-bold text-amber-800 mb-4">4. ¿Compro o Ahorro? (Interpersonal)</h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Organizar y moderar un debate sobre una situación de consumo dilemática grupal.</li>
-                <li><strong>Tarea:</strong> Elegir una situación (ej. invertir $10.000 en un curso online vs. gastarlos en una fiesta). Dividir el grupo en dos posturas y argumentar. Registrar las 3 razones más persuasivas de cada lado y, como moderadores, lograr una conclusión consensuada.</li>
-                <li><strong>Ejemplo:</strong> Debate sobre si la compra de una consola de videojuegos es una inversión en ocio (postura A) o un gasto prescindible (postura B).</li>
+                <li><strong>Consigna:</strong> Organizar y moderar un debate sobre una situación de consumo dilemática
+                    grupal.</li>
+                <li><strong>Tarea:</strong> Elegir una situación (ej. invertir $10.000 en un curso online vs. gastarlos
+                    en una fiesta). Dividir el grupo en dos posturas y argumentar. Registrar las 3 razones más
+                    persuasivas de cada lado y, como moderadores, lograr una conclusión consensuada.</li>
+                <li><strong>Ejemplo:</strong> Debate sobre si la compra de una consola de videojuegos es una inversión
+                    en ocio (postura A) o un gasto prescindible (postura B).</li>
                 <li><strong>Formato:</strong> Registro escrito grupal de los argumentos y la conclusión.</li>
             </ul>
         </div>
     </div>
 
     <!-- T5: Lógico-Matemática (Presupuesto Ideal) - CENTRAL -->
-    <div id="modal-t5" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t5"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
-            <h4 class="text-xl font-bold text-amber-800 mb-4">5. Presupuesto Ideal (Lógico-Matemática) - OBLIGATORIO</h4>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <h4 class="text-xl font-bold text-amber-800 mb-4">5. Presupuesto Ideal (Lógico-Matemática) - OBLIGATORIO
+            </h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Elaborar un presupuesto mensual detallado y equilibrado para un escenario dado (ej. estudiante universitario en ciudad promedio).</li>
-                <li><strong>Tarea:</strong> 1. Fijar un ingreso mensual realista. 2. Crear las categorías de gasto (ej. Alquiler, Alimentación, Transporte, Educación, Ahorro). 3. Asignar montos para que el ahorro sea al menos el 10% del ingreso y el saldo final sea cero o positivo. 4. Explicar qué ajustes se hicieron para lograr el equilibrio.</li>
-                <li><strong>Ejemplo:</strong> Ingreso: $200.000. Gasto en alquiler: $60.000 (30%). Ahorro: $20.000 (10%). La suma de los gastos + ahorro debe ser igual al ingreso.</li>
-                <li><strong>Formato:</strong> Tabla de presupuesto con fórmulas (si se usa planilla) o cálculos a mano. Grupal.</li>
+                <li><strong>Consigna:</strong> Elaborar un presupuesto mensual detallado y equilibrado para un escenario
+                    dado (ej. estudiante universitario en ciudad promedio).</li>
+                <li><strong>Tarea:</strong> 1. Fijar un ingreso mensual realista. 2. Crear las categorías de gasto (ej.
+                    Alquiler, Alimentación, Transporte, Educación, Ahorro). 3. Asignar montos para que el ahorro sea al
+                    menos el 10% del ingreso y el saldo final sea cero o positivo. 4. Explicar qué ajustes se hicieron
+                    para lograr el equilibrio.</li>
+                <li><strong>Ejemplo:</strong> Ingreso: $200.000. Gasto en alquiler: $60.000 (30%). Ahorro: $20.000
+                    (10%). La suma de los gastos + ahorro debe ser igual al ingreso.</li>
+                <li><strong>Formato:</strong> Tabla de presupuesto con fórmulas (si se usa planilla) o cálculos a mano.
+                    Grupal.</li>
             </ul>
         </div>
     </div>
 
     <!-- T6: Espacial (Infografía: 10 Consejos) -->
-    <div id="modal-t6" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t6"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-xl font-bold text-amber-800 mb-4">6. Infografía: 10 Consejos (Espacial)</h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Diseñar una infografía visualmente atractiva con "10 consejos para administrar tu dinero" de forma efectiva.</li>
-                <li><strong>Tarea:</strong> La infografía debe usar un diseño jerárquico (título, subtítulos, numeración clara). Usar al menos 5 íconos o ilustraciones para acompañar los puntos. La tipografía, colores y disposición deben facilitar la lectura rápida y la retención visual de la información.</li>
-                <li><strong>Ejemplo:</strong> Usar un ícono de un cerdito para "Consejo 1: Págate a ti primero (ahorro)"; un ícono de una tarjeta de crédito tachada para "Consejo 5: Evita las deudas innecesarias".</li>
+                <li><strong>Consigna:</strong> Diseñar una infografía visualmente atractiva con "10 consejos para
+                    administrar tu dinero" de forma efectiva.</li>
+                <li><strong>Tarea:</strong> La infografía debe usar un diseño jerárquico (título, subtítulos, numeración
+                    clara). Usar al menos 5 íconos o ilustraciones para acompañar los puntos. La tipografía, colores y
+                    disposición deben facilitar la lectura rápida y la retención visual de la información.</li>
+                <li><strong>Ejemplo:</strong> Usar un ícono de un cerdito para "Consejo 1: Págate a ti primero
+                    (ahorro)"; un ícono de una tarjeta de crédito tachada para "Consejo 5: Evita las deudas
+                    innecesarias".</li>
                 <li><strong>Formato:</strong> Infografía estática (digital o afiche grande a mano). Grupal.</li>
             </ul>
         </div>
     </div>
 
     <!-- T7: Intrapersonal (Mis Hábitos Financieros) -->
-    <div id="modal-t7" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t7"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-xl font-bold text-amber-800 mb-4">7. Mis Hábitos Financieros (Intrapersonal)</h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Escribir una reflexión profunda sobre la propia relación con el dinero y elaborar un plan de mejora personal.</li>
-                <li><strong>Tarea:</strong> 1. Describir un "hábito financiero" personal (bueno o malo). 2. Analizar por qué se tiene ese hábito (ej. gasto impulsivo por estrés). 3. Establecer 2 metas SMART (Específicas, Medibles, Alcanzables, Relevantes, con Tiempo) para mejorar el hábito en el próximo mes.</li>
-                <li><strong>Ejemplo:</strong> Meta SMART: "Reduciré mi gasto semanal en café de $3.000 a $1.500 durante las próximas 4 semanas, transfiriendo la diferencia a mi cuenta de ahorro cada lunes."</li>
+                <li><strong>Consigna:</strong> Escribir una reflexión profunda sobre la propia relación con el dinero y
+                    elaborar un plan de mejora personal.</li>
+                <li><strong>Tarea:</strong> 1. Describir un "hábito financiero" personal (bueno o malo). 2. Analizar por
+                    qué se tiene ese hábito (ej. gasto impulsivo por estrés). 3. Establecer 2 metas SMART (Específicas,
+                    Medibles, Alcanzables, Relevantes, con Tiempo) para mejorar el hábito en el próximo mes.</li>
+                <li><strong>Ejemplo:</strong> Meta SMART: "Reduciré mi gasto semanal en café de $3.000 a $1.500 durante
+                    las próximas 4 semanas, transfiriendo la diferencia a mi cuenta de ahorro cada lunes."</li>
                 <li><strong>Formato:</strong> Texto de reflexión personal (mínimo 200 palabras) individual.</li>
             </ul>
         </div>
     </div>
 
     <!-- T8: Naturalista (Cadena de Valor Ética) -->
-    <div id="modal-t8" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t8"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-xl font-bold text-amber-800 mb-4">8. Cadena de Valor Ética (Naturalista)</h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Analizar la "huella" de un producto de consumo (ej. una botella de plástico o un par de zapatillas) y proponer una alternativa de consumo financiero más sostenible.</li>
-                <li><strong>Tarea:</strong> 1. Investigar el origen de los materiales, la producción y el destino final (residuos) del producto elegido. 2. Presentar una alternativa de consumo (ej. comprar de segunda mano, elegir una marca certificada, reducir el consumo). 3. Explicar cómo la decisión financiera (diferencia de precio) justifica el impacto ambiental/social.</li>
-                <li><strong>Ejemplo:</strong> Comparar el precio y la durabilidad de una camiseta "fast fashion" vs. una de marca de comercio justo.</li>
-                <li><strong>Formato:</strong> Presentación oral de la investigación con un apoyo visual (gráfico, cartel). Individual o en parejas.</li>
+                <li><strong>Consigna:</strong> Analizar la "huella" de un producto de consumo (ej. una botella de
+                    plástico o un par de zapatillas) y proponer una alternativa de consumo financiero más sostenible.
+                </li>
+                <li><strong>Tarea:</strong> 1. Investigar el origen de los materiales, la producción y el destino final
+                    (residuos) del producto elegido. 2. Presentar una alternativa de consumo (ej. comprar de segunda
+                    mano, elegir una marca certificada, reducir el consumo). 3. Explicar cómo la decisión financiera
+                    (diferencia de precio) justifica el impacto ambiental/social.</li>
+                <li><strong>Ejemplo:</strong> Comparar el precio y la durabilidad de una camiseta "fast fashion" vs. una
+                    de marca de comercio justo.</li>
+                <li><strong>Formato:</strong> Presentación oral de la investigación con un apoyo visual (gráfico,
+                    cartel). Individual o en parejas.</li>
             </ul>
         </div>
     </div>
 
     <!-- T9: Físico-Kinestésica (Juego de Roles) -->
-    <div id="modal-t9" class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
+    <div id="modal-t9"
+        class="modal fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 hidden opacity-0">
         <div class="modal-content bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative scale-95">
-            <button class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
+            <button
+                class="modal-close absolute top-3 right-4 text-slate-500 hover:text-slate-800 text-3xl">&times;</button>
             <h4 class="text-xl font-bold text-amber-800 mb-4">9. Negociación de Prioridades (Físico-Kinestésica)</h4>
             <ul class="list-disc list-inside space-y-2 text-slate-600">
-                <li><strong>Consigna:</strong> Simular una negociación de un préstamo o una discusión sobre la asignación de un presupuesto limitado.</li>
-                <li><strong>Tarea:</strong> Asignar roles (ej. "Jefe de familia" vs. "Hijo/a pidiendo un gasto", "Empleado" vs. "Jefe de Recursos Humanos pidiendo aumento"). La dramatización debe durar 3-5 minutos. Los participantes deben usar el lenguaje corporal y la entonación para transmitir la necesidad, la firmeza y la empatía durante la negociación.</li>
-                <li><strong>Ejemplo:</strong> Simular una entrevista con un asesor bancario para pedir un crédito para iniciar un emprendimiento, demostrando la capacidad de argumentar con seguridad y claridad.</li>
+                <li><strong>Consigna:</strong> Simular una negociación de un préstamo o una discusión sobre la
+                    asignación de un presupuesto limitado.</li>
+                <li><strong>Tarea:</strong> Asignar roles (ej. "Jefe de familia" vs. "Hijo/a pidiendo un gasto",
+                    "Empleado" vs. "Jefe de Recursos Humanos pidiendo aumento"). La dramatización debe durar 3-5
+                    minutos. Los participantes deben usar el lenguaje corporal y la entonación para transmitir la
+                    necesidad, la firmeza y la empatía durante la negociación.</li>
+                <li><strong>Ejemplo:</strong> Simular una entrevista con un asesor bancario para pedir un crédito para
+                    iniciar un emprendimiento, demostrando la capacidad de argumentar con seguridad y claridad.</li>
                 <li><strong>Formato:</strong> Dramatización / Role-playing grupal.</li>
             </ul>
         </div>
@@ -488,7 +679,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            
+
             const menuBtn = document.getElementById('menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             if (menuBtn) {
@@ -500,7 +691,7 @@
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     if (this.hash !== "") {
-                        if(mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                             mobileMenu.classList.add('hidden');
                         }
                     }
@@ -511,7 +702,7 @@
                 ...document.querySelectorAll('.mi-button'),
                 ...document.querySelectorAll('.tateti-button')
             ];
-            
+
             const closeModalButtons = document.querySelectorAll('.modal-close');
             const modals = document.querySelectorAll('.modal');
 
@@ -566,13 +757,13 @@
                     type: 'radar',
                     data: {
                         labels: [
-                            'Lingüística', 
-                            'Lógico-Matemática', 
-                            'Espacial', 
-                            'Físico-Kinestésica', 
-                            'Musical', 
-                            'Naturalista', 
-                            'Intrapersonal', 
+                            'Lingüística',
+                            'Lógico-Matemática',
+                            'Espacial',
+                            'Físico-Kinestésica',
+                            'Musical',
+                            'Naturalista',
+                            'Intrapersonal',
                             'Interpersonal'
                         ],
                         datasets: [{
@@ -628,4 +819,5 @@
         });
     </script>
 </body>
+
 </html>
